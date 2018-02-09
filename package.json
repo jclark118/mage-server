@@ -49,6 +49,7 @@
     "shp-write": "^0.2.5",
     "terraformer": "1.0.4",
     "terraformer-arcgis-parser": "1.0.4",
+    "textfield": "^1.0.4",
     "togeojson": "0.3.0",
     "walk": "2.3.4",
     "winston": "1.0.1",
