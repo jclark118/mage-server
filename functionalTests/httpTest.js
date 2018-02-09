@@ -47,6 +47,7 @@ describe("MAGE-server API JSON test", function(){
         'password': testUser.password
       }
     };
+    console.log("Testing tokenOptions" + tokenOptions);
     request(tokenOptions, function(err, response, body){
       if (err) return done(err);
 
@@ -69,6 +70,7 @@ describe("MAGE-server API JSON test", function(){
   // Make a request and verify we get a response
   // check the name property
   it("Verify MAGE server is up - return status 200 : /api", function(done){
+    console.log("This is the conURL" + conUrl);
     request(conUrl, function(error, response, body){
       expect(response.statusCode).to.equal(200);
       var jsonObj = JSON.parse(body);
@@ -97,7 +99,7 @@ describe("MAGE-server API JSON test", function(){
       method: 'GET',
       headers: {'Authorization': 'Bearer ' + myToken}
     };
-    
+
     request(tokenOptions, function(err, response, body){
       var jsonObj = JSON.parse(body);
       var username = jsonObj.username;

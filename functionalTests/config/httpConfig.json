@@ -5,7 +5,7 @@
   },
   "functionalServer":{
     "name": "functionalServer",
-    "location": "http://:4242/api"
+    "location": "http://mage.geointservices.io:4242/api"
   },
   "localServer":{
     "name": "local MAGE server",
